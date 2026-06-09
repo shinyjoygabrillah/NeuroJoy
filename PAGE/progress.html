@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Progress Tracker</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="progress.css">
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+<div class="logo">Progress</div>
+
+<div class="nav-links">
+<a href="#tracker">Tracker</a>
+<a href="#goals">Goals</a>
+<a href="#growth">Growth</a>
+<a href="#science">Science</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Track Your Growth</h1>
+
+<p>
+Progress is not about perfection. The brain learns through repetition, consistency, mistakes, adaptation, and practice. Many people focus only on outcomes while overlooking the countless small improvements that happen along the way. Tracking progress helps make growth visible, increases motivation, strengthens self-awareness, and provides evidence that effort is creating change over time. Every completed task, every study session, every skill practiced, and every challenge overcome contributes to long-term development.
+</p>
+
+<button class="hero-btn" onclick="scrollToSection()">
+View Progress
+</button>
+
+</div>
+
+</section>
+
+<section class="section" id="tracker">
+
+<div class="section-title">
+
+<h2>Progress Dashboard</h2>
+
+<p>
+Track completed goals and visualize your growth journey.
+</p>
+
+</div>
+
+<div class="tracker-container">
+
+<div class="progress-number">
+<span id="progressCount">0</span>
+%
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" id="progressFill"></div>
+
+</div>
+
+<div class="progress-buttons">
+
+<button onclick="increaseProgress()">
++10%
+</button>
+
+<button onclick="decreaseProgress()">
+-10%
+</button>
+
+<button onclick="resetProgress()">
+Reset
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="goals">
+
+<div class="section-title">
+
+<h2>Goal Tracking</h2>
+
+<p>
+Break large ambitions into smaller achievable milestones.
+</p>
+
+</div>
+
+<div class="goal-box">
+
+<input
+type="text"
+id="goalInput"
+placeholder="Add a goal...">
+
+<button onclick="addGoal()">
+Add Goal
+</button>
+
+<ul id="goalList"></ul>
+
+</div>
+
+</section>
+
+<section class="section" id="growth">
+
+<div class="section-title">
+
+<h2>Growth Mindset</h2>
+
+<p>
+Learning is a process of continuous improvement rather than instant perfection.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Small Wins Matter</h3>
+
+<p>
+Tiny improvements may seem insignificant in isolation, but they compound over time into meaningful growth and achievement.
+</p>
+</div>
+
+<div class="card">
+<h3>Consistency Beats Intensity</h3>
+
+<p>
+Sustainable habits practiced regularly often produce greater results than occasional bursts of extreme effort.
+</p>
+</div>
+
+<div class="card">
+<h3>Learning Through Mistakes</h3>
+
+<p>
+Errors provide valuable feedback that helps the brain refine skills, strengthen understanding, and improve performance.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="science">
+
+<div class="section-title">
+
+<h2>The Neuroscience of Progress</h2>
+
+<p>
+Progress tracking can influence motivation and reward systems within the brain.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Dopamine & Achievement</h3>
+
+<p>
+The brain often releases dopamine when progress is recognized, reinforcing behaviors that move us toward goals.
+</p>
+</div>
+
+<div class="card">
+<h3>Visible Growth</h3>
+
+<p>
+Tracking achievements makes improvement tangible and helps maintain motivation during difficult periods.
+</p>
+</div>
+
+<div class="card">
+<h3>Neuroplasticity</h3>
+
+<p>
+Every repetition strengthens neural pathways, allowing skills and knowledge to become more efficient over time.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="quote">
+“Success is built from small steps repeated consistently.”
+</div>
+
+</section>
+
+<footer>
+Progress Tracker • Growth • Learning • Improvement
+</footer>
+
+<script src="progress.js"></script>
+
+</body>
+</html>

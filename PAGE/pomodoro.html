@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pomodoro Technique</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="pomodoro.css">
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+<div class="logo">Pomodoro</div>
+
+<div class="nav-links">
+<a href="#timer">Timer</a>
+<a href="#science">Science</a>
+<a href="#focus">Focus</a>
+<a href="#benefits">Benefits</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Pomodoro Technique</h1>
+
+<p>
+The Pomodoro Technique is a time-management and productivity method designed to improve focus, reduce mental fatigue, and make large tasks feel more manageable. Instead of studying or working continuously for hours, the technique breaks work into focused sessions followed by short recovery breaks. This structure aligns with how the brain naturally manages attention and cognitive energy, helping learners maintain concentration while preventing burnout.
+</p>
+
+<button class="hero-btn" onclick="scrollToSection()">
+Start Focusing
+</button>
+
+</div>
+
+</section>
+
+<section class="section" id="timer">
+
+<div class="section-title">
+
+<h2>Pomodoro Timer</h2>
+
+<p>
+Use the timer below to begin a focused study session. Traditional Pomodoro sessions last 25 minutes followed by a 5-minute break.
+</p>
+
+</div>
+
+<div class="timer-container">
+
+<div class="timer-display" id="timer">
+25:00
+</div>
+
+<div class="timer-status" id="status">
+Focus Session
+</div>
+
+<div class="timer-buttons">
+
+<button onclick="startTimer()">Start</button>
+
+<button onclick="pauseTimer()">Pause</button>
+
+<button onclick="resetTimer()">Reset</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="science">
+
+<div class="section-title">
+
+<h2>The Neuroscience of Focus</h2>
+
+<p>
+The Pomodoro Technique works because the brain performs better when attention is directed toward a single task for a defined period of time.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Attention Cycles</h3>
+
+<p>
+Human attention naturally fluctuates throughout the day. Setting a clear time boundary helps the brain commit resources to a task because the workload feels finite and achievable rather than endless and overwhelming.
+</p>
+</div>
+
+<div class="card">
+<h3>Mental Energy</h3>
+
+<p>
+Sustained concentration consumes cognitive resources. Regular breaks allow the brain to recover, helping prevent mental fatigue and improving overall performance across longer study periods.
+</p>
+</div>
+
+<div class="card">
+<h3>Reduced Procrastination</h3>
+
+<p>
+Large projects can feel intimidating. Breaking work into smaller timed intervals reduces psychological resistance and makes it easier to begin difficult tasks.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="focus">
+
+<div class="section-title">
+
+<h2>Building Deep Focus</h2>
+
+<p>
+Focus is a skill that strengthens through practice. Structured work sessions train the brain to remain engaged with fewer distractions.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Single-Tasking</h3>
+
+<p>
+Working on one task at a time reduces cognitive switching costs. Each time attention shifts, the brain requires additional effort to reorient itself, decreasing efficiency.
+</p>
+</div>
+
+<div class="card">
+<h3>Flow States</h3>
+
+<p>
+Consistent focus sessions increase the likelihood of entering a flow state, where concentration becomes effortless and productivity increases dramatically.
+</p>
+</div>
+
+<div class="card">
+<h3>Consistency</h3>
+
+<p>
+Small periods of focused effort repeated consistently often produce better results than occasional bursts of extreme studying or cramming.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="benefits">
+
+<div class="section-title">
+
+<h2>Benefits of Pomodoro</h2>
+
+<p>
+The technique offers advantages for students, professionals, researchers, and anyone working on complex tasks.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Better Retention</h3>
+
+<p>
+Short focused sessions improve information processing and memory formation by reducing mental overload.
+</p>
+</div>
+
+<div class="card">
+<h3>Less Burnout</h3>
+
+<p>
+Scheduled recovery periods help maintain sustainable productivity and reduce emotional exhaustion over time.
+</p>
+</div>
+
+<div class="card">
+<h3>Greater Motivation</h3>
+
+<p>
+Completing multiple Pomodoro sessions provides a sense of progress, reinforcing motivation and encouraging continued effort.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="quote">
+“Focus intensely. Rest intentionally. Repeat consistently.”
+</div>
+
+</section>
+
+<footer>
+Pomodoro Technique • Focus Smarter, Not Longer
+</footer>
+
+<script src="pomodoro.js"></script>
+
+</body>
+</html>

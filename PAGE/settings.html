@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+<div class="logo">Settings</div>
+
+<div class="nav-links">
+<a href="#preferences">Preferences</a>
+<a href="#accessibility">Accessibility</a>
+<a href="#appearance">Appearance</a>
+<a href="#profile">Profile</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Personalize Your Experience</h1>
+
+<p>
+Everyone's brain processes information differently. Some people prefer minimal visual stimulation, others enjoy colorful interfaces. Some need larger text, while others prefer compact layouts. The purpose of settings is to create an environment that feels comfortable, accessible, and supportive for your unique learning style, sensory needs, and preferences.
+</p>
+
+<button class="hero-btn" onclick="scrollToSection()">
+Open Settings
+</button>
+
+</div>
+
+</section>
+
+<section class="section" id="preferences">
+
+<div class="section-title">
+
+<h2>User Preferences</h2>
+
+<p>
+Customize how the website looks and feels.
+</p>
+
+</div>
+
+<div class="settings-box">
+
+<div class="setting-item">
+
+<label>Display Name</label>
+
+<input
+type="text"
+id="username"
+placeholder="Enter your name">
+
+</div>
+
+<div class="setting-item">
+
+<label>Theme</label>
+
+<select id="themeSelect">
+
+<option value="default">Default</option>
+<option value="purple">Purple Galaxy</option>
+<option value="blue">Ocean Blue</option>
+<option value="green">Nature Green</option>
+
+</select>
+
+</div>
+
+<button onclick="saveSettings()">
+Save Settings
+</button>
+
+<p id="savedMessage"></p>
+
+</div>
+
+</section>
+
+<section class="section" id="accessibility">
+
+<div class="section-title">
+
+<h2>Accessibility</h2>
+
+<p>
+Accessibility settings help make learning easier and more comfortable.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Large Text</h3>
+
+<p>
+Increasing text size can reduce visual strain and improve readability for many users.
+</p>
+</div>
+
+<div class="card">
+<h3>Reduced Overload</h3>
+
+<p>
+Simple layouts and predictable navigation can help reduce cognitive and sensory overload.
+</p>
+</div>
+
+<div class="card">
+<h3>Personal Comfort</h3>
+
+<p>
+The best learning environment is the one that supports your brain's needs and preferences.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="appearance">
+
+<div class="section-title">
+
+<h2>Appearance & Design</h2>
+
+<p>
+Visual environments can influence attention, motivation, and comfort.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Color Psychology</h3>
+
+<p>
+Different colors can create different moods and emotional experiences while using a website.
+</p>
+</div>
+
+<div class="card">
+<h3>Visual Clarity</h3>
+
+<p>
+Clear spacing, readable typography, and intuitive layouts improve user experience.
+</p>
+</div>
+
+<div class="card">
+<h3>Consistency</h3>
+
+<p>
+Consistent design patterns reduce cognitive effort and make navigation easier.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="profile">
+
+<div class="section-title">
+
+<h2>Your Profile</h2>
+
+<p>
+Your saved preferences will appear below.
+</p>
+
+</div>
+
+<div class="profile-box">
+
+<h3 id="displayName">
+No name saved yet
+</h3>
+
+<p id="displayTheme">
+Theme: Default
+</p>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="quote">
+“A comfortable environment helps the mind learn, grow, and thrive.”
+</div>
+
+</section>
+
+<footer>
+Settings • Personalization • Accessibility • Comfort
+</footer>
+
+<script src="settings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Focus Tools</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="focus.tools.css">
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+<div class="logo">Focus Tools</div>
+
+<div class="nav-links">
+<a href="#focus">Focus</a>
+<a href="#tools">Tools</a>
+<a href="#brain">Brain</a>
+<a href="#productivity">Productivity</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Focus Tools</h1>
+
+<p>
+Focus is not simply a matter of willpower. It is a biological process influenced by attention systems, dopamine pathways, sensory environments, emotional states, sleep quality, stress levels, and cognitive workload. Focus tools are strategies and systems that help reduce distractions, support executive functioning, improve attention regulation, and make it easier for the brain to stay engaged with meaningful tasks. Whether you are neurotypical, have ADHD, autism, or simply struggle with concentration, these tools can help create conditions that support sustained attention and productive work.
+</p>
+
+<button class="hero-btn" onclick="scrollToSection()">
+Explore Tools
+</button>
+
+</div>
+
+</section>
+
+<section class="section" id="tools">
+
+<div class="section-title">
+
+<h2>Interactive Focus Toolkit</h2>
+
+<p>
+Try different focus-supporting tools designed to help organize attention and reduce overwhelm.
+</p>
+
+</div>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+<h3>🎯 Focus Counter</h3>
+
+<div class="counter" id="focusCount">0</div>
+
+<button onclick="increaseFocus()">
+Complete Session
+</button>
+
+<p>
+Track how many focus sessions you complete today.
+</p>
+</div>
+
+<div class="tool-card">
+<h3>📝 Task List</h3>
+
+<input type="text" id="taskInput" placeholder="Add a task...">
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<div class="tool-card">
+<h3>💧 Hydration Reminder</h3>
+
+<p id="waterText">
+Drink water and support your brain.
+</p>
+
+<button onclick="waterReminder()">
+Remind Me
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="focus">
+
+<div class="section-title">
+
+<h2>Why Focus Is Difficult</h2>
+
+<p>
+The brain is constantly balancing attention between internal thoughts and external stimuli.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Distractions</h3>
+
+<p>
+Modern environments contain constant notifications, sounds, social media feeds, and competing demands that continuously pull attention away from important tasks.
+</p>
+</div>
+
+<div class="card">
+<h3>Cognitive Load</h3>
+
+<p>
+When the brain is managing too much information simultaneously, working memory becomes overloaded and focus naturally declines.
+</p>
+</div>
+
+<div class="card">
+<h3>Motivation Systems</h3>
+
+<p>
+Attention is influenced by dopamine-based reward systems. Tasks that feel meaningful, interesting, or rewarding tend to hold attention more effectively.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="brain">
+
+<div class="section-title">
+
+<h2>The Neuroscience of Attention</h2>
+
+<p>
+Focus emerges from interactions between multiple brain systems working together.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Prefrontal Cortex</h3>
+
+<p>
+The prefrontal cortex plays a major role in planning, decision-making, prioritization, and maintaining attention on goals despite distractions.
+</p>
+</div>
+
+<div class="card">
+<h3>Dopamine</h3>
+
+<p>
+Dopamine influences motivation, reward anticipation, and engagement. Healthy dopamine regulation supports attention and goal-directed behavior.
+</p>
+</div>
+
+<div class="card">
+<h3>Neural Networks</h3>
+
+<p>
+Attention depends on communication between multiple brain networks that coordinate sensory processing, executive functioning, and working memory.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="productivity">
+
+<div class="section-title">
+
+<h2>Focus Strategies</h2>
+
+<p>
+Small adjustments to your environment and habits can significantly improve concentration.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Time Blocking</h3>
+
+<p>
+Scheduling dedicated periods for specific tasks reduces decision fatigue and improves task initiation.
+</p>
+</div>
+
+<div class="card">
+<h3>Breaks</h3>
+
+<p>
+Regular breaks allow attention systems to recover and often improve performance during longer study sessions.
+</p>
+</div>
+
+<div class="card">
+<h3>Environment Design</h3>
+
+<p>
+Reducing visual clutter, minimizing distractions, and creating predictable workspaces can support sustained focus.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="quote">
+“Focus grows when distractions shrink.”
+</div>
+
+</section>
+
+<footer>
+Focus Tools • Attention • Productivity • Learning
+</footer>
+
+<script src="focus.tools.js"></script>
+
+</body>
+</html>

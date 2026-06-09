@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Journal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="journal.css">
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+<div class="logo">Journal</div>
+
+<div class="nav-links">
+<a href="#write">Write</a>
+<a href="#entries">Entries</a>
+<a href="#reflection">Reflection</a>
+<a href="#mind">Mind</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Your Mind on Paper</h1>
+
+<p>
+Journaling is a powerful cognitive and emotional tool that helps the brain organize thoughts, process emotions, reduce mental clutter, and improve self-awareness. When thoughts stay only in the mind, they can feel overwhelming and abstract. Writing them down transforms them into structured external information that the brain can analyze more calmly. Journaling supports emotional regulation, memory processing, decision-making, and long-term mental clarity by creating a bridge between internal experience and external expression.
+</p>
+
+<button class="hero-btn" onclick="scrollToSection()">
+Start Writing
+</button>
+
+</div>
+
+</section>
+
+<section class="section" id="write">
+
+<div class="section-title">
+<h2>Write Your Thoughts</h2>
+
+<p>
+Express your emotions, ideas, experiences, or anything on your mind. Your entries are saved in your browser.
+</p>
+</div>
+
+<div class="journal-box">
+
+<textarea id="journalInput" placeholder="Write your thoughts here..."></textarea>
+
+<div class="journal-buttons">
+
+<button onclick="saveEntry()">Save Entry</button>
+
+<button onclick="clearEntry()">Clear</button>
+
+</div>
+
+<p id="saveMsg"></p>
+
+</div>
+
+</section>
+
+<section class="section" id="entries">
+
+<div class="section-title">
+<h2>Saved Entry</h2>
+
+<p>
+Your last saved journal entry appears below.
+</p>
+</div>
+
+<div class="entry-box">
+
+<p id="entryText">No entry yet.</p>
+
+</div>
+
+</section>
+
+<section class="section" id="reflection">
+
+<div class="section-title">
+
+<h2>Why Journaling Works</h2>
+
+<p>
+Writing helps regulate emotions and organize thought patterns.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cognitive Offloading</h3>
+<p>
+Journaling reduces mental load by transferring thoughts from working memory to written form, freeing cognitive resources.
+</p>
+</div>
+
+<div class="card">
+<h3>Emotional Processing</h3>
+<p>
+Writing about emotions helps the brain process experiences more clearly and reduces emotional intensity over time.
+</p>
+</div>
+
+<div class="card">
+<h3>Self Awareness</h3>
+<p>
+Regular journaling reveals patterns in thoughts, behaviors, and emotional triggers that may otherwise go unnoticed.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="mind">
+
+<div class="section-title">
+<h2>The Mind & Writing</h2>
+
+<p>
+Journaling strengthens communication between emotional and logical brain systems.
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Prefrontal Clarity</h3>
+<p>
+Writing activates reasoning regions of the brain, helping organize chaotic emotional thoughts into structured understanding.
+</p>
+</div>
+
+<div class="card">
+<h3>Memory Strengthening</h3>
+<p>
+Recording experiences improves memory encoding and helps preserve important emotional and cognitive events.
+</p>
+</div>
+
+<div class="card">
+<h3>Stress Reduction</h3>
+<p>
+Expressing thoughts externally reduces internal stress load and helps regulate nervous system activation.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="quote">
+“Your thoughts become clearer when they are no longer trapped inside your mind.”
+</div>
+
+</section>
+
+<footer>
+Journal • Self-awareness through writing
+</footer>
+
+<script src="journal.js"></script>
+
+</body>
+</html>
